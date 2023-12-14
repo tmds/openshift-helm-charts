@@ -48,8 +48,8 @@ You must change the `build.uri`, `build.ref` and `build.startupProject` to refer
 | `build.startupProject` | Path to the project to run. This can refer to a project file (e.g. csproj), or a directory containing a single project. | `app` | This value defaults to the sample application project. Be sure to override this if you want to build and deploy your own application. |
 | `build.contextDir` | The sub-directory where the application source code exists | - | - |
 | `build.imageStreamTag.name` | The ImageStreamTag name of the desired builder image | `dotnet:8.0` | This value defaults to the .NET version of the sample application. Be sure to use the tag that matches the version of .NET your application targets. |
-| `build.imageStreamTag.useReleaseNamespace` | Determines if the builder ImageStreamTag referenced by `build.imageStreamTag.name` is in the same namespace you are installing this Helm chart to | `false` | - |
-| `build.imageStreamTag.namespace` | The namespace containing the builder ImageStreamTag | `openshift` | - |
+| `build.imageStreamTag.useReleaseNamespace` | When `build.imageStreamTag.namespace` is not set, determines wheter to use the Release namespace, or the 'openshift' namespace. | `false` | - |
+| `build.imageStreamTag.namespace` | The namespace containing the builder ImageStreamTag | - | - |
 | `build.output.kind` | Determines if the image will be pushed to an ImageStreamTag or a DockerImage (external registry) | ImageStreamTag | More information: More information: https://docs.openshift.com/container-platform/4.6/builds/managing-build-output.html |
 | `build.output.pushSecret` | Push secret name | - | Used only if build.output.kind == 'DockerImage' |
 | `build.pullSecret` | Image pull secret | - | More information: https://docs.openshift.com/container-platform/4.6/openshift_images/managing_images/using-image-pull-secrets.html |

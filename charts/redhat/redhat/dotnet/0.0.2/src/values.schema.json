@@ -47,13 +47,13 @@
                             "type": "string",
                             "description": "Name of the ImageStreamTag"
                         },
+                        "namespace": {
+                            "type": ["string", "null"],
+                            "description": "The namespace that contains the ImageStreamTag"
+                        },
                         "useReleaseNamespace": {
                             "type": "boolean",
-                            "description": "Determines if the ImageStreamTag is in the namespace you are releasing to"
-                        },
-                        "namespace": {
-                            "type": "string",
-                            "description": "The namespace that contains the ImageStreamTag"
+                            "description": "When namespace is empty, find the ImageStreamTag in the release namespace instead of the 'openshift' namespace."
                         }
                     }
                 },

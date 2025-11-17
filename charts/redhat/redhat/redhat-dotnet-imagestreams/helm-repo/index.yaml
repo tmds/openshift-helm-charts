@@ -17,6 +17,6 @@ entries:
     kubeVersion: '>=1.20.0'
     name: redhat-dotnet-imagestreams
     urls:
-    - https://raw.githubusercontent.com/tmds/openshift-helm-charts/dotnet_10/charts/redhat/redhat/redhat-dotnet-imagestreams/helm-repo/redhat-dotnet-imagestreams-0.0.3.tgz
+    - https://raw.githubusercontent.com/tmds/openshift-helm-charts/try_chart/charts/redhat/redhat/redhat-dotnet-imagestreams/helm-repo/redhat-dotnet-imagestreams-0.0.3.tgz
     version: 0.0.3
 generated: "2025-11-17T15:19:53.255103809+01:00"
